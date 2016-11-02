@@ -7,7 +7,7 @@ libs <- c("tm", "SnowballC", "wordcloud", "RColorBrewer", "RCurl", "XML")
 lapply(libs, require, character.only = TRUE)
 
 #Create a word cloud from a plain text file
-source("rquery_wordcloud-TR_function.r")
+source("rquery_wordcloud-TR_function.r") # Turkish wordcloud generator
 res <- rquery.wordcloud("uniye_yeni_baslayanlara_tavsiyeler.txt", type ="file", lang = "turkish")
 
 #####################################
